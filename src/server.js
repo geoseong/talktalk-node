@@ -30,6 +30,9 @@ const server = new GraphQLServer({
 });
 
 server
-  .start({ port: PORT })
-  .then(() => console.log(`Server running on port ${PORT}`))
+  .start({ port: PORT, subscription: '/subscription' })
+  .then((props) => {
+    console.log({ props })
+    console.log(`Server running on port ${PORT}`)
+  })
   .catch((e) => console.error(e));

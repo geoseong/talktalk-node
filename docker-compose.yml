@@ -35,6 +35,8 @@ services:
     volumes:
       - mysql:/var/lib/mysql
       # - /etc/localtime:/etc/localtime:ro
-
+    ports:
+      - "33062:3306"
+      
 volumes:
   mysql:

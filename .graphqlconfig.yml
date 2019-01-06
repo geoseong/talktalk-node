@@ -1,6 +1,6 @@
 projects:
     app:
-        schemPath: src/schemas/schema.graphql
+        schemaPath: src/schemas/schema.graphql
 
     prisma:
         schemaPath: src/schemas/prisma.graphql
